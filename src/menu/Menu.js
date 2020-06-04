@@ -36,7 +36,7 @@ function Menu({ onUpdateScreen, idMenu }) {
         <div>{renderMenus()}</div>
       </div>
       <a
-        href="https://github.com/Danny908/Tic-Tac-Toe-MiniMax"
+        href="https://github.com/Danny908/SnakeJS-React-Hooks"
         target="_blank"
         rel="noopener noreferrer"
       >
