@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SnakeJS-React-Hooks/precache-manifest.6d0243850fbcb6dd62289976a4bf9a23.js"
+  "/SnakeJS-React-Hooks/precache-manifest.9dff0a80eeeb65f5d9662f5b59c2ef4a.js"
 );
 
 self.addEventListener('message', (event) => {

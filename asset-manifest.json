@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SnakeJS-React-Hooks/static/css/main.30881012.chunk.css",
-    "main.js": "/SnakeJS-React-Hooks/static/js/main.25bcfdad.chunk.js",
-    "main.js.map": "/SnakeJS-React-Hooks/static/js/main.25bcfdad.chunk.js.map",
+    "main.js": "/SnakeJS-React-Hooks/static/js/main.24dd8581.chunk.js",
+    "main.js.map": "/SnakeJS-React-Hooks/static/js/main.24dd8581.chunk.js.map",
     "runtime-main.js": "/SnakeJS-React-Hooks/static/js/runtime-main.7d2c3ad1.js",
     "runtime-main.js.map": "/SnakeJS-React-Hooks/static/js/runtime-main.7d2c3ad1.js.map",
     "static/js/2.0cd99a2f.chunk.js": "/SnakeJS-React-Hooks/static/js/2.0cd99a2f.chunk.js",
     "static/js/2.0cd99a2f.chunk.js.map": "/SnakeJS-React-Hooks/static/js/2.0cd99a2f.chunk.js.map",
     "index.html": "/SnakeJS-React-Hooks/index.html",
-    "precache-manifest.6d0243850fbcb6dd62289976a4bf9a23.js": "/SnakeJS-React-Hooks/precache-manifest.6d0243850fbcb6dd62289976a4bf9a23.js",
+    "precache-manifest.9dff0a80eeeb65f5d9662f5b59c2ef4a.js": "/SnakeJS-React-Hooks/precache-manifest.9dff0a80eeeb65f5d9662f5b59c2ef4a.js",
     "service-worker.js": "/SnakeJS-React-Hooks/service-worker.js",
     "static/css/main.30881012.chunk.css.map": "/SnakeJS-React-Hooks/static/css/main.30881012.chunk.css.map",
     "static/js/2.0cd99a2f.chunk.js.LICENSE.txt": "/SnakeJS-React-Hooks/static/js/2.0cd99a2f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7d2c3ad1.js",
     "static/js/2.0cd99a2f.chunk.js",
     "static/css/main.30881012.chunk.css",
-    "static/js/main.25bcfdad.chunk.js"
+    "static/js/main.24dd8581.chunk.js"
   ]
 }
