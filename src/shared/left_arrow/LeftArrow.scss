@@ -1,0 +1,23 @@
+.LeftArrow {
+  position: absolute;
+  left: -30px;
+  top: calc(50% - 17px);
+  width: 35px;
+  height: 35px;
+  fill: currentColor;
+  will-change: opacity;
+  animation: 800ms Toggle-Visibility infinite step-end;
+  &.inactive {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+@keyframes Toggle-Visibility {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

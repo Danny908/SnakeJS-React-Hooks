@@ -1,0 +1,18 @@
+.App {
+  position: absolute;
+  background-color: #262931;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: whitesmoke;
+  padding: 50px 0;
+  > h1 {
+    margin: 0 0 50px 0;
+  }
+  .Menu {
+    margin-bottom: 150px;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../mixins.scss";
+
+div.container {
+  text-align: center;
+  div.menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 410px;
+    height: 180px;
+    border: 2px dashed whitesmoke;
+    border-radius: 8px;
+    > div {
+      width: 195px;
+      text-align: center;
+      > h1 {
+        @include item-list;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    margin: 50px 0;
+  }
+}

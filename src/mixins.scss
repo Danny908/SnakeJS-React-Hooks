@@ -1,0 +1,11 @@
+@mixin item-list {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  color: whitesmoke;
+  padding: 10px;
+  box-sizing: content-box;
+  text-align: center;
+  display: inline-block;
+  min-width: 195px;
+}
