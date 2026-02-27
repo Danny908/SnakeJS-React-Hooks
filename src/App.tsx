@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "./App.scss";
-import Menu from "./menu/Menu";
-import GameBoard from "./game-board/GameBoard";
+import './App.css';
+import Menu from './menu/Menu';
+import GameBoard from './game-board/GameBoard';
 
 function App() {
-  const [screen, setScreen] = useState("menu");
+  const [screen, setScreen] = useState('menu');
   const [score, setScore] = useState(0);
 
   // Menu options
   const screens = {
-    MENU: "MENU",
-    NEW_GAME: "NEW GAME",
+    MENU: 'MENU',
+    NEW_GAME: 'NEW GAME',
   };
   // Update score
-  const updateScore = (s) => {
+  const updateScore = (s: any) => {
     setScore((score) => score + s);
   };
 
-  const updateScreen = (val) => {
+  const updateScreen = (val: any) => {
     setScreen(val);
   };
 
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{screen === screens.NEW_GAME ? `SCORE: ${score}` : "SNAKE JS"}</h1>
+      <h1>{screen === screens.NEW_GAME ? `SCORE: ${score}` : 'SNAKE JS'}</h1>
       {getScreen()}
     </div>
   );
