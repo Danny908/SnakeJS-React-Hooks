@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import "./GameBoard.scss";
+import React, { useState, useEffect } from 'react';
+import './GameBoard.css';
 
-function GameBoard({ onScore, onUpdateScreen, idMenu }) {
-  let canvasRef;
+function GameBoard({ onScore, onUpdateScreen, idMenu }: any) {
+  let canvasRef: any;
   // Set canvas size on desired tiles numbers
   const tile = 25;
   // Set number of tiles on game board
@@ -28,14 +28,14 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
   ]);
   // Active control direction
   const [ctrl, setControl] = useState(ctrls.RIGHT);
-  const [food, setFood] = useState(null);
+  const [food, setFood]: [any, any] = useState(null);
   const [end, setEnd] = useState(false);
 
   const draw = () => {
-    const ctx = canvasRef.getContext("2d");
+    const ctx = canvasRef.getContext('2d');
     // Clean canvas on every update
     ctx.beginPath();
-    ctx.fillStyle = "#262931";
+    ctx.fillStyle = '#262931';
     ctx.fillRect(0, 0, width, height);
     drawSnake(ctx);
     drawFood(ctx);
@@ -44,12 +44,12 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
     }
   };
 
-  const drawSnake = (ctx) => {
+  const drawSnake = (ctx: any) => {
     // Draw snake on canvas
     snake.forEach((s, i) => {
       ctx.beginPath();
-      ctx.fillStyle = i === snake.length - 1 ? "#57ba59" : "whitesmoke";
-      ctx.strokeStyle = "#262931";
+      ctx.fillStyle = i === snake.length - 1 ? '#57ba59' : 'whitesmoke';
+      ctx.strokeStyle = '#262931';
       const x = tile * s.x;
       const y = tile * s.y;
       ctx.fillRect(x, y, tile, tile);
@@ -58,7 +58,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
   };
 
   // Update snake head, apear on other side if board edge reached
-  const snakeMove = (head) => {
+  const snakeMove = (head: any) => {
     let { x, y } = head;
     switch (ctrl) {
       case ctrls.LEFT:
@@ -111,7 +111,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
       updateSnake();
     }, tick);
 
-  const keyboardCtrls = (e) => {
+  const keyboardCtrls = (e: any) => {
     if (e.keyCode !== ctrl) {
       // Control limitations
       if (
@@ -125,7 +125,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
     }
   };
 
-  const randomizer = (limit) => {
+  const randomizer = (limit: any) => {
     // if limit = 10 will return (0 - 9)
     return Math.floor(Math.random() * limit);
   };
@@ -143,7 +143,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
     setFood({ x, y, special });
   };
 
-  const drawFood = (ctx) => {
+  const drawFood = (ctx: any) => {
     let x;
     let y;
 
@@ -152,13 +152,13 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
       x = tile * food.x;
       y = tile * food.y;
       ctx.beginPath();
-      ctx.fillStyle = food.special ? "yellow" : "red";
+      ctx.fillStyle = food.special ? 'yellow' : 'red';
       ctx.fillRect(x, y, tile, tile);
     }
   };
 
   // Detect is state A is hittin B
-  const collition = (a, b) => {
+  const collition = (a: any, b: any) => {
     return JSON.stringify(a) === JSON.stringify(b);
   };
 
@@ -178,12 +178,12 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
   };
 
   // Game over message
-  const gameOver = (ctx) => {
-    const txt = "GAME OVER :(";
+  const gameOver = (ctx: any) => {
+    const txt = 'GAME OVER :(';
     ctx.beginPath();
-    ctx.font = "bold 50px Arial";
-    ctx.fillStyle = "whitesmoke";
-    ctx.strokeStyle = "#262931";
+    ctx.font = 'bold 50px Arial';
+    ctx.fillStyle = 'whitesmoke';
+    ctx.strokeStyle = '#262931';
     const { width: txtWidth } = ctx.measureText(txt);
     ctx.fillText(txt, width / 2 - txtWidth / 2, 400);
     ctx.strokeText(txt, width / 2 - txtWidth / 2, 400);
@@ -205,7 +205,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
   }, [ctrl]);
 
   useEffect(() => {
-    let interval;
+    let interval: any;
     if (!end) {
       // tickFn instance
       interval = tickFn();
@@ -221,7 +221,7 @@ function GameBoard({ onScore, onUpdateScreen, idMenu }) {
 
   return (
     <canvas
-      tabIndex="0"
+      tabIndex={0}
       onKeyUp={(e) => keyboardCtrls(e)}
       ref={(ref) => {
         if (ref) {

@@ -1,12 +1,12 @@
-import React from "react";
-import "./LeftArrow.scss";
+import React from 'react';
+import './LeftArrow.css';
 
-export function LeftArrow(props) {
+export function LeftArrow(props: any) {
   const active = props.active;
 
   return (
     <svg
-      className={active ? "LeftArrow" : "LeftArrow inactive"}
+      className={active ? 'LeftArrow' : 'LeftArrow inactive'}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >

@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "./Menu.scss";
-import { LeftArrow } from "../shared/left_arrow/LeftArrow";
+import './Menu.css';
+import { LeftArrow } from '../shared/left_arrow/LeftArrow';
 
-function Menu({ onUpdateScreen, idMenu }) {
+function Menu({ onUpdateScreen, idMenu }: any) {
   const [option, setOption] = useState(null);
-  const menuOpts = ["NEW GAME"];
+  const menuOpts = ['NEW GAME'];
 
-  const activeMenu = (i) => {
+  const activeMenu = (i: any) => {
     setOption(i);
   };
 
@@ -23,7 +23,7 @@ function Menu({ onUpdateScreen, idMenu }) {
         >
           {<LeftArrow active={i === option} />}
           {menuOpts[i]}
-        </h1>
+        </h1>,
       );
     }
 
